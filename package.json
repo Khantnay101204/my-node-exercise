@@ -5,11 +5,13 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "John",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.4.1",
     "dotenv": "^17.2.1",
     "express": "^4.21.2",
     "mongoose": "^5.13.23",
@@ -25,6 +27,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
+    "ndb": "^1.1.5",
     "prettier": "^3.6.2"
   },
   "engines": {
